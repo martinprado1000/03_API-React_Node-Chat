@@ -30,6 +30,7 @@ function App() {
             <BrowserRouter> {/* Configuramos las rutas */}
               <Routes> {/* Indicamos que vas a ser multiples rutas */}
 
+                <Route path="/" element={<LoginPage />}></Route>
                 <Route path="/register" element={<RegisterPage />}></Route>
                 <Route path="/login" element={<LoginPage />}></Route>
                 <Route path="/recoveryPassword" element={<RecoveryPasswordPage />}></Route>
