@@ -9,6 +9,7 @@ import {
   Link,
   NavLink,
 } from "react-router-dom";
+const URL_BACK = import.meta.env.VITE_URL_BACK 
 
 function NavBarLoggedIn() {
   const navigate = useNavigate();
@@ -21,7 +22,7 @@ function NavBarLoggedIn() {
 
   const handleLogOut = async () => {
     try {
-      let res = await fetch("http://localhost:8080/api/logOut", {
+      let res = await fetch(`${URL_BACK}/api/logOut`, {
         credentials: "include", // Permito que el backend cargue y elimine las cookie en el front
       });
       console.log(res);

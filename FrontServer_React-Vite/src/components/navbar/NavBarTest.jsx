@@ -6,7 +6,7 @@ import {
 function NavBarTest() {
     return (
       <nav>
-        asdasdasdasd
+        test
       <ul>
         <li>
           <NavLink to="/login">Login</NavLink>
